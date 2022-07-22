@@ -8,10 +8,9 @@ fib := method(n,
             n_1 := res
         ); 
     )
-
-    "Fib from: " print; n print; " is: " print; res println;
+    return res
 );
 
 for (i, 1, 10,
-    fib(i);
+    "For n" print; i print; "result: " print; fib(i) println;
 );
